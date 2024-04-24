@@ -1,0 +1,68 @@
+
+<body>
+    <div class="text">
+    <h2>{{selectedCourse.name}}</h2>
+    </div>
+    <div class="container">
+    
+        <div class=" main-video">
+            <div class="video">
+                <video src="../../assets/videos/Intro.mp4" controls mediagroup></video>
+                <h3 class="title">{{selectedVideo.name}}</h3>
+            </div>
+        </div>
+    
+        <div class="video-list">
+
+            <div class="vid" *ngFor="let video of videos; let i = index" [class.active]="selectedVideo.name === video.name" (click)="setSelectedVideo(video)">
+                <video src="../../assets/videos/Codes.mp4" controls></video>
+                <h3 class="title">{{i+1}}. {{video.name}}</h3>
+            </div>
+        </div>
+    
+    </div>
+    
+    
+    
+    
+        <div class="wrapper">
+          <header>Tabs</header>
+          <input type="radio" name="slider" checked id="home">
+          <input type="radio" name="slider" id="blog">
+          
+          <nav>
+            <label for="home" class="home"><i class="fas fa-home"></i>Description</label>
+            <label for="blog" class="blog"><i class="fas fa-blog"></i>Q&A</label>
+            
+            <div class="slider"></div>
+          </nav>
+          <section>
+            <div class="content content-1">
+              <p>{{selectedVideo.description}}</p>
+            </div>
+
+            <div class="content content-2">
+                <div class="add-comment">
+                  <img src="../../assets/image.jpg" alt="">
+                  <input type="text" placeholder="Write comments..." (keyup.enter)="addComment()" class="form-control" [(ngModel)]="addCommentText"/>
+                  <button class="btn" (click)="addComment()">Send</button>
+                </div>
+                <div *ngFor="let comment of selectedVideoComments | async; let i = index" class="old-comment">
+                  <img src="../../assets/image.jpg" alt="">
+                  <div>
+                      <h3>Mirka Mala </h3>
+                      <p>{{comment.text}}</p>
+                     
+                  </div>
+                </div>
+      
+               
+              </div>
+
+          </section>
+          
+        </div>
+      
+    </body>
+
+    

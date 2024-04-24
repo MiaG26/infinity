@@ -1,0 +1,83 @@
+
+<body>
+    
+    <div class="container">
+        <div class="wrapper">
+            <div class="banner">
+          <img src="../../assets/profile_banner.jpg">
+            </div>
+          <div class="content">
+            <img src="../../assets/image.jpg" alt="">
+            <h2>{{user.firstName}} {{user.lastName}}</h2>
+            
+            <div class="footer">
+                <h2>Personal details</h2>
+                <div class="box">
+                    <p class="num">firstname</p>
+                    <p>{{user.firstName}}</p>
+                  </div>
+                  <div class="box">
+                    <p class="num">lastname</p>
+                    <p>{{user.lastName}}</p>
+                  </div>
+                  <div class="box">
+                <p class="num">e-mail</p>
+                <p>{{user.email}}</p>
+              </div>
+              <div class="box">
+                <p class="num">age</p>
+                <p>{{user.age}}</p>
+              </div>
+              
+            </div>
+            <div class="footer">
+                <h2>Subscription</h2>
+                <div class="box">
+                  <p class="num">start date</p>
+                  <p>{{latestSubscription.startDate}}</p>
+                </div>
+                <div class="box">
+                    <p class="num">end date</p>
+                    <p>{{latestSubscription.endDate}}</p>
+                  </div>
+  
+                
+              </div>
+
+              <div class="footer">
+                <h2>Credit card details</h2>
+                <div class="box">
+                  <p class="num">number</p>
+                  <p>{{creditCards[0].number}}</p>
+                </div>
+                <div class="box">
+                  <p class="num">cvv</p>
+                  <p>{{creditCards[0].cvv}}</p>
+                </div>
+                
+              </div>
+              <div class="footer">
+                <h2>Home address</h2>
+                <div class="box">
+                  <p class="num">street</p>
+                  <p>{{addresses[0].street}}</p>
+                </div>
+                <div class="box">
+                  <p class="num">number</p>
+                  <p>{{addresses[0].number}}</p>
+                </div>
+                <div class="box">
+                  <p class="num">postal code</p>
+                  <p>{{addresses[0].postalCode}}</p>
+                </div>
+                <div class="box">
+                  <p class="num">country</p>
+                  <p>{{addresses[0].country}}</p>
+                </div>
+                
+              </div>
+          </div>
+        </div>
+      </div>
+
+</body>

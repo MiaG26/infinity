@@ -1,0 +1,34 @@
+    
+	<!---start course section---->
+	<section class="courses" id="courses">
+		<div class="center-text">
+			<h5>COURSES</h5>
+			<h2>Explore Courses</h2>
+		</div>
+
+		<div class="courses-content">
+            <div class="row" *ngFor="let course of courses">          
+                    <img src="../../assets/{{course.name}}.png">
+                    <div class="courses-text">
+                        <h5>{{course.price}}€</h5>
+                        <h3>{{course.name}}</h3>
+                        <h6>{{course.description}}</h6>
+                        <div class="rating">
+                            <div class="star">
+                                <a href="#"><i class='bx bxs-star' ></i></a>
+                                <a href="#"><i class='bx bxs-star' ></i></a>
+                                <a href="#"><i class='bx bxs-star' ></i></a>
+                                <a href="#"><i class='bx bxs-star' ></i></a>
+                                <a href="#"><i class='bx bxs-star' ></i></a>
+                            </div>
+                            <div class="review">
+                                <p>5 Reviews</p>
+                            </div>
+                            <div class="main-btn">
+                                <button class="btn" (click)="addCourseToUser(course.id)">Buy</button>
+                            </div>
+                        </div>
+                    </div>
+              </div>
+		</div>
+    </section>

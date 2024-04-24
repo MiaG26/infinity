@@ -1,0 +1,163 @@
+<body>
+	<!---start home section---->
+	<section class="home" id="home">
+		<div class="home-text">
+			<h6>Best online learning platform</h6>
+			<h1>Accessible Online</h1>
+			<h1> Courses For All</h1>
+			<p>Own your future learning new skills online</p>
+			<div class="latter">
+				<form>
+					<input type="email" placeholder="Write Your Email" required>
+					<input type="submit" value="Let's Start" required>
+				</form>
+			</div>
+		</div>
+
+		<div class="home-img">
+			<img src="../../assets/best-online-learnin-removebg-preview.png">
+		</div>
+	</section>
+
+	<!---start container section---->
+	<section class="container">
+		<div class="container-box">
+			<div class="container-img">
+				<img src="../../assets/con1.svg">
+			</div>
+			<div class="container-text">
+				<h4>5K</h4>
+				<p>Online Courses</p>
+			</div>
+		</div>
+
+		<div class="container-box">
+			<div class="container-img">
+				<img src="../../assets/con2.svg">
+			</div>
+			<div class="container-text">
+				<h4>5K</h4>
+				<p>Online Courses</p>
+			</div>
+		</div>
+
+		<div class="container-box">
+			<div class="container-img">
+				<img src="../../assets/con3.svg">
+			</div>
+			<div class="container-text">
+				<h4>5K</h4>
+				<p>Online Courses</p>
+			</div>
+		</div>
+
+		<div class="container-box">
+			<div class="container-img">
+				<img src="../../assets/con4.svg">
+			</div>
+			<div class="container-text">
+				<h4>5K</h4>
+				<p>Online Courses</p>
+			</div>
+		</div>
+
+	</section>
+
+	<!---start categories section---->
+	<section class="categories" id="categories">
+		<div class="center-text">
+			<h5>CATEGORIES</h5>
+			<h2>Popular Categories</h2>
+		</div>
+
+		<div class="categories-content">
+			<div class="box_1">
+				<img src="../../assets/web_img.svg">
+				<h3><b>Create a websites</b></h3>
+				<p>5 Courses</p>
+			</div>
+
+			<div class="box_2">
+				<img src="../../assets/app_img.svg">
+				<h3><b>Create mobile apps</b></h3>
+				<p>5 Courses</p>
+			</div>
+
+			<div class="box_3">
+				<img src="../../assets/design_img.svg">
+				<h3><b>Design logos and apps</b></h3>
+				<p>5 Courses</p>
+			</div>
+
+			<div class="box_4">
+				<img src="../../assets/office_img.svg">
+				<h3><b>Work with office</b></h3>
+				<p>5 Courses</p>
+			</div>
+
+		</div>
+
+		<div class="main-btn">
+			<a href="#" class="btn">All Categories</a>
+		</div>
+	</section>
+
+	<!---start course section---->
+	<section class="courses" id="courses">
+		<div class="center-text">
+			<h5>COURSES</h5>
+			<h2>Explore Popular Courses</h2>
+		</div>
+
+		<div class="courses-content">
+            <div class="row" *ngFor="let i of indexes">          
+                    <img src="../../assets/{{courses[i].name}}.png">
+                    <div class="courses-text">
+                        <h5>{{courses[i].price}}€</h5>
+                        <h3>{{courses[i].name}}</h3>
+                        <h6>{{courses[i].description}}</h6>
+                        <div class="rating">
+                            <div class="star">
+                                <a href="#"><i class='bx bxs-star' ></i></a>
+                                <a href="#"><i class='bx bxs-star' ></i></a>
+                                <a href="#"><i class='bx bxs-star' ></i></a>
+                                <a href="#"><i class='bx bxs-star' ></i></a>
+                                <a href="#"><i class='bx bxs-star' ></i></a>
+                            </div>
+                            <div class="review">
+                                <p>5 Reviews</p>
+                            </div>
+                            <div class="main-btn">
+                                <a href="../courses" class="btn">Buy</a>
+                            </div>
+                        </div>
+                    </div>
+              </div>
+
+			
+		</div>
+
+		<div class="main-btn">
+			<a href="../courses" class="btn">All courses</a>
+		</div>
+	</section>
+
+	
+	<!---start about section---->
+	<section class="about" id="about">
+		<div class="about-img">
+			<img src="../../assets/mentor1-removebg-preview.png">
+		</div>
+
+		<div class="about-text">
+			<h2>Want to share your knowledge? Join us a Mentor</h2>
+			<p>High-definition video is video of higher resolution and quality than standard-definition. While there is no standardized meaning for high-definition, generally any video.</p>
+			<h4>Best Courses</h4>
+			<h5>Top rated Instructors</h5>
+			<a href="#" class="btn">Read More</a>
+		</div>
+	</section>
+
+
+
+</body>

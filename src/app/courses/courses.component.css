@@ -1,0 +1,127 @@
+
+section {
+    padding: 3rem 9%;
+    
+  }
+  
+  
+.center-text{
+	text-align: center;
+}
+.center-text h5{
+	color: #f66962;
+	font-size: 16px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+}
+.center-text h2{
+	font-size: 2.6rem;
+	line-height: 1.2;
+}
+  
+.btn{
+	/*display: inline-block;*/
+	padding: 16px 30px;
+	font-size:  1.1rem;
+	font-weight: 700;
+    border: 2px solid #f66962;
+	background: #f66962;
+	color: #ffffff;
+	border-radius: 30px;
+	transition: all .40s ease;
+	margin-right: 15px;
+}
+.btn:hover{
+	transform: scale(0.9) translateY(-5px);
+}
+
+.courses{
+	background: url(../../assets/coursebg.png);
+	background-size: cover;
+	background-position: center;
+}
+
+.courses-content{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+	gap: 2rem;
+	align-items: center;
+	margin-top: 4rem;
+	cursor: pointer;
+	border-radius: 15px;
+}
+.row{
+	background: var(--bg-color);
+	padding: 0px 0px 10px 0px;
+	border-radius: 20px;
+	box-shadow: 0px 5px 40px rgb(19 8 73 / 13%);
+	transition: all .40s ease;
+    height: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+.row:hover{
+	transform: translateY(-15px);
+}
+.row img{
+	
+
+	height: auto;
+	width: 110px;
+	margin-top: 25px;
+	margin-bottom: 20px;
+	margin-left: 35%;
+	
+}
+
+
+.courses-text{
+	padding: 35px 20px;
+    position: relative;
+	display: flex;
+    flex-direction: column;
+}
+.courses-text h5{
+	color:#f66962;
+	font-size: 18px;
+	font-weight: 700;
+}
+.courses-text h3{
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 34px;
+	margin: 15px 0 15px;
+	transition: all .40s ease;
+}
+.courses-text h3:hover{
+	color: #f66962;
+}
+.courses-text h6{
+	color: #696969;
+	font-size: 1.1rem;
+	font-weight: 400;
+	line-height: 30px;
+	letter-spacing: 1px;
+	margin-bottom: 30px;
+}
+.courses-text .rating{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+    align-items: baseline;
+}
+.star i{
+	color: #f66962;
+	margin-right: 2px;
+	font-size: 17px;
+}
+.review p{
+	color: #696969;
+	font-size:  1.1rem;
+	font-weight: 400;
+	letter-spacing: 1px;
+}

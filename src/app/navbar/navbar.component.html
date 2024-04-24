@@ -1,0 +1,27 @@
+	<header>
+		<a href="#" class="logo">
+			<img src="../../assets/infinity logo1.png">
+		</a>
+
+		<ul class="navbar">
+			<li><a href="#home">Home</a></li>
+			<li><a href="/courses">Courses</a></li>
+			<li><a href="/pricing">Subscription</a></li>
+		</ul>
+
+		<div class="header-icons">
+			<span *ngIf="username; else elseBlock">
+        {{username}}
+        <a href="/profile"><i class=''>Profile</i></a>
+        <a href="/dashboard"><i class=''>Dashboard</i></a>    
+        <a href="/home" (click)="logout()"><i class=''>Logout</i></a>
+      </span>
+      
+      <ng-template #elseBlock>
+        <a href="/register"><i class='' >Register</i></a>
+        <a href="/login"><i class=''>Login</i></a> 
+      </ng-template>
+
+      </div>
+      
+	</header>

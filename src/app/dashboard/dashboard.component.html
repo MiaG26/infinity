@@ -1,0 +1,32 @@
+<body>
+
+    <section class="courses" id="courses">
+		<div class="text">
+			<h2>My Courses</h2>
+            
+		</div>
+        <div class="course">
+            <a href="../courses/" class="btn">All courses</a>
+        </div>
+    
+        <div class="latter">
+            <form>
+                <input type="search" placeholder="Search" required>
+                <input type="submit" value="Let's Start" required>
+            </form>
+        </div>
+    </section>
+    <!-- course-1 section starts  -->
+
+<section class="course-1">
+
+    <div class="box" *ngFor="let course of courses">
+        <img src="../../assets/{{course.name}}.png" alt="">
+        <h3>{{course.name}}</h3>
+        <p>{{course.description}}</p>
+        <button class="btn-course" (click)="selectCourse(course)">Courses</button>
+    </div>
+
+</section>
+
+</body>
